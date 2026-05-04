@@ -19,7 +19,7 @@
   },
   "screen_shake": {
     "enabled": true,
-    "intensity": 0.1
+    "intensity": 0.5
   },
   "hunger": {
     "enabled": false,
@@ -45,10 +45,12 @@
       "minecraft": 1.0
     },
     "by_item": {
-      "minecraft:stick": 1.0
+      "minecraft:stick": 1.0,
+      "create:electron_tube": 1.0
     },
     "by_tag": {
-      "#minecraft:planks": 1.0
+      "#minecraft:planks": 1.0,
+      "#cogs_and_clocks:insulators": 1.5
     }
   },
   "output_multipliers": {

@@ -12,7 +12,7 @@
 #Copper Sink settings
 [copper_sink]
 	#Whether the Copper Sink provides infinite water (if false, it's just a normal 2000mB tank)
-	infiniteWater = true
+	infiniteWater = false
 
 #Centrifugal Pump settings
 [centrifugal_pump]

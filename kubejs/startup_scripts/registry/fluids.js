@@ -1,7 +1,9 @@
 StartupEvents.registry("fluid", (e) => {
     //Crude Oil
     e.create("cogs_and_clocks:crude_oil", "thick")
-        .tint(0x625b6b)
+        .stillTexture("cogs_and_clocks:block/crude_oil_still")
+        .flowingTexture("cogs_and_clocks:block/crude_oil_flow")
+        .tint(0x332635)
         .type(fluidType => {
             fluidType.density(4000); 
             fluidType.viscosity(4000);
@@ -57,7 +59,7 @@ StartupEvents.registry("fluid", (e) => {
         })
     //Molten Brass
     e.create("cogs_and_clocks:molten_brass", "thick")
-        .tint(0xddf6ff)
+        .tint(0xfada84)
         .type(fluidType => {
             fluidType.density(4000); 
             fluidType.viscosity(4000);
@@ -65,7 +67,7 @@ StartupEvents.registry("fluid", (e) => {
         })
     //Molte Rubber
     e.create("cogs_and_clocks:molten_rubber", "thick")
-        .tint(0xe1e5e5)
+        .tint(0x505058)
         .type(fluidType => {
             fluidType.density(4000); 
             fluidType.viscosity(4000);
@@ -73,7 +75,7 @@ StartupEvents.registry("fluid", (e) => {
         })
     //Molte Plastic
     e.create("cogs_and_clocks:molten_plastic", "thick")
-        .tint(0x505058)
+        .tint(0xddf6ff)
         .type(fluidType => {
             fluidType.density(4000); 
             fluidType.viscosity(4000);

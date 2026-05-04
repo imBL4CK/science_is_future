@@ -2,7 +2,9 @@
   "mod_priorities": [
     "minecraft",
     "kubejs",
-    "create"
+    "create",
+    "cogs_and_clocks",
+    "alloyed"
   ],
   "priority_overrides": {},
   "stone_variants": [

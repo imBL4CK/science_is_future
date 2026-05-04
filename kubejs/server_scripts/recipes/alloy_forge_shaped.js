@@ -44,13 +44,12 @@ ServerEvents.recipes((e) => {
       },
     },
   ];
-
   recipes.forEach((recipe) => {
     e.custom({
       type: "alloyed:forging_shaped",
       pattern: recipe.pattern,
       key: recipe.key,
       result: recipe.result,
-    }).id(`sandboxed:alloyed/forging_shaped/${recipe.id}`);
+    }).id(`cogs_and_clocks:alloyed/forging_shaped/${recipe.id}`);
   });
 });
