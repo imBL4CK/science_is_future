@@ -9,6 +9,6 @@ ServerEvents.recipes((e) => {
     },*/
   ];
   recipes.forEach((recipe) => {
-    e.shapeless(recipe.result, recipe.ingredients).id(`cogs_and_clocks:shapeless/${recipe.id}`);
+    e.shapeless(recipe.result, recipe.ingredients).id(`science_is_future:shapeless/${recipe.id}`);
   });
 });

@@ -1,5 +1,5 @@
 StartupEvents.registry("item", (e) => {
-    e.create("cogs_and_clocks:rubber").tag("cogs_and_clocks:insulators");
-    e.create("cogs_and_clocks:plastic_sheet").tag("c:plastics").tag("cogs_and_clocks:insulators");
-    e.create("cogs_and_clocks:terracotta_ingot_cast");
+    e.create("science_is_future:rubber").tag("science_is_future:insulators");
+    e.create("science_is_future:plastic_sheet").tag("c:plastics").tag("science_is_future:insulators");
+    e.create("science_is_future:terracotta_ingot_cast");
 });

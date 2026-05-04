@@ -6,12 +6,12 @@ ServerEvents.recipes((e) => {
       id: "minecraft/iron_ingot",
       ingredients: [
         {
-          "fluid": "cogs_and_clocks:molten_iron",
+          "fluid": "science_is_future:molten_iron",
           "type": "fluid_stack",
           "amount": 90
         },
         {
-          "item": "cogs_and_clocks:terracotta_ingot_cast",
+          "item": "science_is_future:terracotta_ingot_cast",
         },
       ],
       results: [
@@ -19,7 +19,7 @@ ServerEvents.recipes((e) => {
           "id": "minecraft:iron_ingot"
         },
         {
-          "id": "cogs_and_clocks:terracotta_ingot_cast",
+          "id": "science_is_future:terracotta_ingot_cast",
         },
       ],
     },
@@ -28,12 +28,12 @@ ServerEvents.recipes((e) => {
       id: "minecraft/copper_ingot",
       ingredients: [
         {
-          "fluid": "cogs_and_clocks:molten_copper",
+          "fluid": "science_is_future:molten_copper",
           "type": "fluid_stack",
           "amount": 90
         },
         {
-          "item": "cogs_and_clocks:terracotta_ingot_cast",
+          "item": "science_is_future:terracotta_ingot_cast",
         },
       ],
       results: [
@@ -41,7 +41,7 @@ ServerEvents.recipes((e) => {
           "id": "minecraft:copper_ingot"
         },
         {
-          "id": "cogs_and_clocks:terracotta_ingot_cast",
+          "id": "science_is_future:terracotta_ingot_cast",
         },
       ],
     },
@@ -50,12 +50,12 @@ ServerEvents.recipes((e) => {
       id: "minecraft/gold_ingot",
       ingredients: [
         {
-          "fluid": "cogs_and_clocks:molten_gold",
+          "fluid": "science_is_future:molten_gold",
           "type": "fluid_stack",
           "amount": 90
         },
         {
-          "item": "cogs_and_clocks:terracotta_ingot_cast",
+          "item": "science_is_future:terracotta_ingot_cast",
         },
       ],
       results: [
@@ -63,7 +63,7 @@ ServerEvents.recipes((e) => {
           "id": "minecraft:gold_ingot"
         },
         {
-          "id": "cogs_and_clocks:terracotta_ingot_cast",
+          "id": "science_is_future:terracotta_ingot_cast",
         },
       ],
     },
@@ -72,12 +72,12 @@ ServerEvents.recipes((e) => {
       id: "create/zinc_ingot",
       ingredients: [
         {
-          "fluid": "cogs_and_clocks:molten_zinc",
+          "fluid": "science_is_future:molten_zinc",
           "type": "fluid_stack",
           "amount": 90
         },
         {
-          "item": "cogs_and_clocks:terracotta_ingot_cast",
+          "item": "science_is_future:terracotta_ingot_cast",
         },
       ],
       results: [
@@ -85,7 +85,7 @@ ServerEvents.recipes((e) => {
           "id": "create:zinc_ingot"
         },
         {
-          "id": "cogs_and_clocks:terracotta_ingot_cast",
+          "id": "science_is_future:terracotta_ingot_cast",
         },
       ],
     },
@@ -94,12 +94,12 @@ ServerEvents.recipes((e) => {
       id: "alloyed/steel_ingot",
       ingredients: [
         {
-          "fluid": "cogs_and_clocks:molten_steel",
+          "fluid": "science_is_future:molten_steel",
           "type": "fluid_stack",
           "amount": 90
         },
         {
-          "item": "cogs_and_clocks:terracotta_ingot_cast",
+          "item": "science_is_future:terracotta_ingot_cast",
         },
       ],
       results: [
@@ -107,7 +107,7 @@ ServerEvents.recipes((e) => {
           "id": "alloyed:steel_ingot"
         },
         {
-          "id": "cogs_and_clocks:terracotta_ingot_cast",
+          "id": "science_is_future:terracotta_ingot_cast",
         },
       ],
     },
@@ -116,12 +116,12 @@ ServerEvents.recipes((e) => {
       id: "alloyed/bronze_ingot",
       ingredients: [
         {
-          "fluid": "cogs_and_clocks:molten_bronze",
+          "fluid": "science_is_future:molten_bronze",
           "type": "fluid_stack",
           "amount": 90
         },
         {
-          "item": "cogs_and_clocks:terracotta_ingot_cast",
+          "item": "science_is_future:terracotta_ingot_cast",
         },
       ],
       results: [
@@ -129,7 +129,7 @@ ServerEvents.recipes((e) => {
           "id": "alloyed:bronze_ingot"
         },
         {
-          "id": "cogs_and_clocks:terracotta_ingot_cast",
+          "id": "science_is_future:terracotta_ingot_cast",
         },
       ],
     },
@@ -138,12 +138,12 @@ ServerEvents.recipes((e) => {
       id: "create/brass_ingot",
       ingredients: [
         {
-          "fluid": "cogs_and_clocks:molten_brass",
+          "fluid": "science_is_future:molten_brass",
           "type": "fluid_stack",
           "amount": 90
         },
         {
-          "item": "cogs_and_clocks:terracotta_ingot_cast",
+          "item": "science_is_future:terracotta_ingot_cast",
         },
       ],
       results: [
@@ -151,7 +151,7 @@ ServerEvents.recipes((e) => {
           "id": "create:brass_ingot"
         },
         {
-          "id": "cogs_and_clocks:terracotta_ingot_cast",
+          "id": "science_is_future:terracotta_ingot_cast",
         },
       ],
     },
@@ -161,6 +161,6 @@ ServerEvents.recipes((e) => {
       type: "create:compacting",
       ingredients: recipe.ingredients,
       results: recipe.results,
-    }).id(`cogs_and_clocks:create/compacting/${recipe.id}`);
+    }).id(`science_is_future:create/compacting/${recipe.id}`);
   });
 })

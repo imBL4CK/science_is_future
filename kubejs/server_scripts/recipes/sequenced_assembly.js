@@ -5,11 +5,11 @@ ServerEvents.recipes((e) => {
     {
       id: "minecraft/iron_ingot",
       ingredient: {
-        "item": "cogs_and_clocks:ingot_cast"
+        "item": "science_is_future:ingot_cast"
       },
       results: [
         {
-          "item": { "id": "cogs_and_clocks:ingot_cast" },
+          "item": { "id": "science_is_future:ingot_cast" },
           "chance": 1.0,
           "count": 1
         },
@@ -24,17 +24,17 @@ ServerEvents.recipes((e) => {
           "type": "create:filling",
           "ingredients": [
             {
-              "item": "cogs_and_clocks:ingot_cast"
+              "item": "science_is_future:ingot_cast"
             },
             {
-              "fluid": "cogs_and_clocks:molten_iron",
+              "fluid": "science_is_future:molten_iron",
               "type": "fluid_stack",
               "amount": 90
             }
           ],
           "results": [
             {
-              "id": "cogs_and_clocks:ingot_cast"
+              "id": "science_is_future:ingot_cast"
             }
           ]
         },
@@ -42,19 +42,19 @@ ServerEvents.recipes((e) => {
           "type": "create:pressing",
           "ingredients": [
             {
-              "item": "cogs_and_clocks:ingot_cast"
+              "item": "science_is_future:ingot_cast"
             }
           ],
           "results": [
             {
-              "id": "cogs_and_clocks:ingot_cast"
+              "id": "science_is_future:ingot_cast"
             }
           ]
         }
       ],
       loops: 1,
       transitional_item: {
-        "id": "cogs_and_clocks:iron_ingot_cast"
+        "id": "science_is_future:iron_ingot_cast"
       }
     }*/
   ];
@@ -66,6 +66,6 @@ ServerEvents.recipes((e) => {
       sequence: recipe.sequence,
       loops: recipe.loops,
       transitional_item: recipe.transitional_item
-    }).id(`cogs_and_clocks:create/sequenced_assembly/${recipe.id}`);
+    }).id(`science_is_future:create/sequenced_assembly/${recipe.id}`);
   });
 })

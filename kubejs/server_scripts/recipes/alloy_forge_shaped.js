@@ -50,6 +50,6 @@ ServerEvents.recipes((e) => {
       pattern: recipe.pattern,
       key: recipe.key,
       result: recipe.result,
-    }).id(`cogs_and_clocks:alloyed/forging_shaped/${recipe.id}`);
+    }).id(`science_is_future:alloyed/forging_shaped/${recipe.id}`);
   });
 });

@@ -78,6 +78,6 @@ ServerEvents.recipes((e) => {
       processing_time: recipe.processingTime,
       ingredients: recipe.ingredients,
       results: recipe.results,
-    }).id(`cogs_and_clocks:create/milling/${recipe.id}`);
+    }).id(`science_is_future:create/milling/${recipe.id}`);
   });
 })

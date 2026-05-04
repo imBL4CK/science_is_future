@@ -31,6 +31,6 @@ ServerEvents.recipes((e) => {
       type: "alloyed:forging",
       ingredients: recipe.ingredients,
       result: recipe.result,
-    }).id(`cogs_and_clocks:alloyed/forging_shapeless/${recipe.id}`);
+    }).id(`science_is_future:alloyed/forging_shapeless/${recipe.id}`);
   });
 });

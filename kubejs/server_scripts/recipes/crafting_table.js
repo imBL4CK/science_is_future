@@ -38,7 +38,7 @@ ServerEvents.recipes((e) => {
       ],
       keys: {
         A: "create:andesite_alloy",
-        I: "#cogs_and_clocks:insulators"
+        I: "#science_is_future:insulators"
       },
     },
     //Andesite Tunnel
@@ -51,7 +51,7 @@ ServerEvents.recipes((e) => {
       ],
       keys: {
         A: "create:andesite_alloy",
-        I: "#cogs_and_clocks:insulators"
+        I: "#science_is_future:insulators"
       },
     },
     //Brass Funnel
@@ -66,7 +66,7 @@ ServerEvents.recipes((e) => {
       keys: {
         E: "create:electron_tube",
         B: "#c:ingots/brass",
-        I: "#cogs_and_clocks:insulators"
+        I: "#science_is_future:insulators"
       },
     },
     //Brass Tunnel
@@ -81,7 +81,7 @@ ServerEvents.recipes((e) => {
       keys: {
         E: "create:electron_tube",
         B: "#c:ingots/brass",
-        I: "#cogs_and_clocks:insulators"
+        I: "#science_is_future:insulators"
       },
     },
     //Mechanical Belt
@@ -93,11 +93,11 @@ ServerEvents.recipes((e) => {
         "III",
       ],
       keys: {
-        I: "#cogs_and_clocks:insulators"
+        I: "#science_is_future:insulators"
       },
     },
   ];
   recipes.forEach((recipe) => {
-    e.shaped(recipe.result, recipe.pattern, recipe.keys).id(`cogs_and_clocks:minecraft/crafting_table/${recipe.id}`);
+    e.shaped(recipe.result, recipe.pattern, recipe.keys).id(`science_is_future:minecraft/crafting_table/${recipe.id}`);
   });
 });
