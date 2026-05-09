@@ -96,6 +96,62 @@ ServerEvents.recipes((e) => {
         I: "#science_is_future:insulators"
       },
     },
+    //Flint Hammer
+    {
+      result: "science_is_future:flint_hammer",
+      id: "science_is_future/flint_hammer",
+      pattern: [
+        " FS",
+        " SF",
+        "S  "
+      ],
+      keys: {
+        F: "minecraft:flint",
+        S: "minecraft:stick"
+      },
+    },
+    //Backpack
+    {
+      result: "reliable_backpacks:backpack",
+      id: "reliable_backpacks/backpack",
+      pattern: [
+        "SSS",
+        "RCR",
+        "SSS"
+      ],
+      keys: {
+        S: "science_is_future:tanned_leather",
+        R: "#c:ropes",
+        C: "#c:chests/wooden",
+      },
+    },
+    //Copper Diving Helmet
+    {
+      result: "create:copper_diving_helmet",
+      id: "create/copper_diving_helmet",
+      pattern: [
+        "CCC",
+        "IGI",
+        " I "
+      ],
+      keys: {
+        C: "#c:ingots/copper",
+        G: "#c:glass_blocks",
+        I: "#science_is_future:insulators"
+      },
+    },
+    //Copper Diving Helmet
+    {
+      result: "science_is_future:rubber_boots",
+      id: "science_is_future/rubber_boots",
+      pattern: [
+        "R R",
+        "R R"
+      ],
+      keys: {
+        R: "science_is_future:rubber"
+      },
+    },
   ];
   recipes.forEach((recipe) => {
     e.shaped(recipe.result, recipe.pattern, recipe.keys).id(`science_is_future:minecraft/crafting_table/${recipe.id}`);

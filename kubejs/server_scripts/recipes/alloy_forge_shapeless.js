@@ -13,6 +13,7 @@ ServerEvents.recipes((e) => {
         {"tag": "c:nuggets/copper"},
       ],
     },
+    //Steam Pipe
     {
       result: {
         "id": "create:fluid_pipe",
@@ -23,6 +24,17 @@ ServerEvents.recipes((e) => {
         {"tag": "c:plates/copper"},
         {"tag": "c:ingots/copper"},
         {"tag": "c:plates/copper"},
+      ],
+    },
+    //Reinforced Iron Plate
+    {
+      result: {
+        "id": "science_is_future:iron_reinforced_plating"
+      },
+      id: "science_is_future/iron_reinforced_plating",
+      ingredients: [
+        {"tag": "c:plates/iron"},
+        {"tag": "c:plates/iron"},
       ],
     },
   ];

@@ -1,0 +1,11 @@
+[
+    {
+        "action": "remove",
+        "items": [
+            "create:wheat_flour",
+            "create:dough",
+            "bountifulfares:cooked_egg",
+            "bountifulfares:gristmill"
+        ]
+    }
+]

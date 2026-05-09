@@ -43,6 +43,126 @@ ServerEvents.recipes((e) => {
         }
       },
     },
+    //Bronze Hammer
+    {
+      result: {
+        id: "science_is_future:bronze_hammer"
+      },
+      id: "science_is_future/bronze_hammer",
+      pattern: [
+        " IS",
+        " SI",
+        "S  "
+      ],
+      key: {
+        S: {
+          item: "minecraft:stick"
+        },
+        I: {
+          tag: "c:ingots/bronze"
+        }
+      },
+    },
+    //Steel Hammer
+    {
+      result: {
+        id: "science_is_future:steel_hammer"
+      },
+      id: "science_is_future/steel_hammer",
+      pattern: [
+        " IS",
+        " SI",
+        "S  "
+      ],
+      key: {
+        S: {
+          item: "minecraft:stick"
+        },
+        I: {
+          tag: "c:ingots/steel"
+        }
+      },
+    },
+    //Iron Helmet
+    {
+      result: {
+        id: "minecraft:iron_helmet"
+      },
+      id: "minecraft/iron_helmet",
+      pattern: [
+        "PIP",
+        "I I",
+        "   "
+      ],
+      key: {
+        P: {
+          item: "science_is_future:iron_reinforced_plating"
+        },
+        I: {
+          tag: "c:ingots/iron"
+        }
+      },
+    },
+    //Iron Chestplate
+    {
+      result: {
+        id: "minecraft:iron_chestplate"
+      },
+      id: "minecraft/iron_chestplate",
+      pattern: [
+        "I I",
+        "PIP",
+        "PIP"
+      ],
+      key: {
+        P: {
+          item: "science_is_future:iron_reinforced_plating"
+        },
+        I: {
+          tag: "c:ingots/iron"
+        }
+      },
+    },
+    //Iron Leggings
+    {
+      result: {
+        id: "minecraft:iron_leggings"
+      },
+      id: "minecraft/iron_leggings",
+      pattern: [
+        "PPP",
+        "I I",
+        "I I"
+      ],
+      key: {
+        P: {
+          item: "science_is_future:iron_reinforced_plating"
+        },
+        I: {
+          tag: "c:ingots/iron"
+        }
+      },
+    },
+    //Iron Boots
+    {
+      result: {
+        id: "minecraft:iron_boots"
+      },
+      id: "minecraft/iron_boots",
+      pattern: [
+        "P P",
+        "I I",
+        "   "
+      ],
+      key: {
+        P: {
+          item: "science_is_future:iron_reinforced_plating"
+        },
+        I: {
+          tag: "c:ingots/iron"
+        }
+      },
+    },
   ];
   recipes.forEach((recipe) => {
     e.custom({

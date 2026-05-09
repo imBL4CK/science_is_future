@@ -2,7 +2,7 @@
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
-    "harvest_tool.show_unbreakable": false,
+    "harvest_tool.show_unbreakable": true,
     "animal_owner": true,
     "harvest_tool.effective_tool": true,
     "energy_storage.style": "PROGRESS_BAR",
@@ -38,7 +38,7 @@
     "player_head": true,
     "lectern": true,
     "entity_armor": true,
-    "harvest_tool.creative": false,
+    "harvest_tool.creative": true,
     "horse_stats": true,
     "item_tooltip": true,
     "entity_health": true,
@@ -53,13 +53,13 @@
     "chiseled_bookshelf": true
   },
   "jadeaddons": {
-    "equipment_requirement": ""
+    "equipment_requirement": "science_is_future:enables_jade"
   },
   "jadeaddons.create": {
     "filter": true,
     "backtank_capacity": true,
     "goggles.requires_goggles": true,
-    "goggles": true,
+    "goggles": false,
     "blaze_burner": true,
     "exact_block": true,
     "goggles.detailed": false,
@@ -79,17 +79,23 @@
     "coordinates.rel": false,
     "registry_name.special": false,
     "block_states": false,
-    "distance": false,
+    "distance": true,
     "block_face": false,
     "coordinates": false,
     "registry_name": "OFF",
     "block_properties": false,
     "mod_name": true
   },
-  "dynamiducts": {
-    "duct_info": true
+  "unlitcampfire": {
+    "campfireinfo": true
   },
   "balm": {
     "jade": true
+  },
+  "storagedrawers": {
+    "display.stacklimit": true,
+    "main": true,
+    "display.content": true,
+    "display.status": true
   }
 }

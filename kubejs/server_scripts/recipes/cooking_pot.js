@@ -4,7 +4,7 @@ ServerEvents.recipes((e) => {
     //Rubber by resin
     {
       id: "science_is_future/rubber_by_resin",
-      experience: 1.0,
+      experience: 0.3,
       ingredients: [
         {
           "item": "nomansland:resin"
@@ -21,7 +21,7 @@ ServerEvents.recipes((e) => {
     //Rubber by honeycomb
     {
       id: "science_is_future/rubber_by_honeycomb",
-      experience: 1.0,
+      experience: 0.3,
       ingredients: [
         {
           "item": "minecraft:honeycomb"
@@ -34,6 +34,34 @@ ServerEvents.recipes((e) => {
         "id": "science_is_future:rubber",
         "count": 1,
       }
+    },
+    //Tanned Leather by honeycomb
+    {
+      id: "science_is_future/tanned_leather",
+      experience: 0.3,
+      ingredients: [
+        {
+          "item": "minecraft:leather"
+        },
+        {
+          "item": "farmersdelight:tree_bark"
+        },
+        {
+          "item": "salt:salt"
+        },
+        {
+          "item": "minecraft:potion",
+          "components": {
+            "minecraft:potion_contents": {
+              "potion": "minecraft:water"
+            }
+          }
+        },
+      ],
+      result: {
+        "id": "science_is_future:tanned_leather",
+        "count": 1,
+      }
     }
   ];
   recipes.forEach((recipe) => {
@@ -43,11 +71,6 @@ ServerEvents.recipes((e) => {
       ingredients: recipe.ingredients,
       recipe_book_tab: recipe.recipe_book_tab,
       result: recipe.result
-    }).id(`science_is_future:farmersdelight/cooking_pot/${recipe.id}`);
-  });
-})
-      ingredients: recipe.ingredients,
-      results: recipe.results,
     }).id(`science_is_future:farmersdelight/cooking_pot/${recipe.id}`);
   });
 })

@@ -66,6 +66,17 @@
       },
       "sync": "minecraft:hotbar"
     },
+    "astran:steel_heart_insertion_ov": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "astran:steel_heart_insertion_ov"
+    },
     "cold_sweat:body_temp": {
       "displacement": {
         "x": 0,
@@ -264,6 +275,28 @@
       },
       "sync": "minecraft:hotbar"
     },
+    "immersiveengineering:blocks": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "immersiveengineering:blocks"
+    },
+    "immersiveengineering:items": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "immersiveengineering:items"
+    },
     "minecraft:bossbar": {
       "displacement": {
         "x": 0,
@@ -450,6 +483,17 @@
         "y": "NONE"
       },
       "sync": "the_beyond:nomad_eyes"
+    },
+    "toms_storage:configurator_info": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "toms_storage:configurator_info"
     },
     "usefulspyglass:hud_base": {
       "displacement": {

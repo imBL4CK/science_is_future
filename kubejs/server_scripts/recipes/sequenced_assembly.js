@@ -1,40 +1,79 @@
 ServerEvents.recipes((e) => {
 
   const recipes = [
-    /*Iron Ingot
+    //Precision Mechanism
     {
-      id: "minecraft/iron_ingot",
+      id: "create/precision_mecanism",
       ingredient: {
-        "item": "science_is_future:ingot_cast"
+        "tag": "c:plates/gold"
       },
       results: [
         {
-          "item": { "id": "science_is_future:ingot_cast" },
-          "chance": 1.0,
-          "count": 1
-        },
-        {
-          "item": { "id": "minecraft:iron_ingot" },
-          "chance": 1.0,
-          "count": 1
+          "id": "create:precision_mechanism",
         }
       ],
       sequence: [
         {
-          "type": "create:filling",
+          "type": "create:deploying",
           "ingredients": [
             {
-              "item": "science_is_future:ingot_cast"
+              "item": "create:golden_sheet"
             },
             {
-              "fluid": "science_is_future:molten_iron",
-              "type": "fluid_stack",
-              "amount": 90
+              "item": "create:electron_tube",
             }
           ],
           "results": [
             {
-              "id": "science_is_future:ingot_cast"
+              "id": "create:golden_sheet"
+            }
+          ]
+        },
+        {
+          "type": "create:deploying",
+          "ingredients": [
+            {
+              "item": "create:golden_sheet"
+            },
+            {
+              "tag": "science_is_future:insulators",
+            }
+          ],
+          "results": [
+            {
+              "id": "create:golden_sheet"
+            }
+          ]
+        },
+        {
+          "type": "create:deploying",
+          "ingredients": [
+            {
+              "item": "create:golden_sheet"
+            },
+            {
+              "item": "create:cogwheel",
+            }
+          ],
+          "results": [
+            {
+              "id": "create:golden_sheet"
+            }
+          ]
+        },
+        {
+          "type": "create:deploying",
+          "ingredients": [
+            {
+              "item": "create:golden_sheet"
+            },
+            {
+              "item": "create:large_cogwheel",
+            }
+          ],
+          "results": [
+            {
+              "id": "create:golden_sheet"
             }
           ]
         },
@@ -42,21 +81,21 @@ ServerEvents.recipes((e) => {
           "type": "create:pressing",
           "ingredients": [
             {
-              "item": "science_is_future:ingot_cast"
+              "item": "create:golden_sheet"
             }
           ],
           "results": [
             {
-              "id": "science_is_future:ingot_cast"
+              "id": "create:golden_sheet"
             }
           ]
         }
       ],
       loops: 1,
       transitional_item: {
-        "id": "science_is_future:iron_ingot_cast"
+        "id": "create:incomplete_precision_mechanism"
       }
-    }*/
+    }
   ];
   recipes.forEach((recipe) => {
     e.custom({

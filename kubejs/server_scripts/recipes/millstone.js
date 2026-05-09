@@ -71,6 +71,91 @@ ServerEvents.recipes((e) => {
         },
       ],
     },
+    //Maize
+    {
+      ingredients: [
+        {
+          "item": "bountifulfares:maize",
+        },
+      ],
+      id: "bountifulfares/maize",
+      processingTime: 100,
+      results: [
+        {
+          "id": "bountifulfares:flour"
+        },
+        {
+          "id": "bountifulfares:flour", 
+          "chance": 0.25,
+          "count": 2
+        },
+        {
+          "id": "bountifulfares:maize_seeds", 
+          "chance": 0.25,
+        },
+      ],
+    },
+    //Grass
+    {
+      ingredients: [
+        {
+          "item": "minecraft:short_grass",
+        },
+      ],
+      id: "minecraft/short_grass",
+      processingTime: 100,
+      results: [
+        {
+          "id": "bountifulfares:grass_seeds",
+          "count": 2
+        },
+      ],
+    },
+    //Walnut Mulch
+    {
+      ingredients: [
+        {
+          "item": "bountifulfares:walnut",
+        },
+      ],
+      id: "bountifulfares/walnut_mulch",
+      processingTime: 100,
+      results: [
+        {
+          "id": "bountifulfares:walnut_mulch"
+        },
+      ],
+    },
+    //Palm Mulch
+    {
+      ingredients: [
+        {
+          "item": "bountifulfares:palm_frond",
+        },
+      ],
+      id: "bountifulfares/palm_mulch",
+      processingTime: 100,
+      results: [
+        {
+          "id": "bountifulfares:palm_mulch"
+        },
+      ],
+    },
+    //Coconut Coir
+    {
+      ingredients: [
+        {
+          "item": "bountifulfares:coconut",
+        },
+      ],
+      id: "bountifulfares/coconut_coir",
+      processingTime: 100,
+      results: [
+        {
+          "id": "bountifulfares:coconut_coir"
+        },
+      ],
+    },
   ];
   recipes.forEach((recipe) => {
     e.custom({

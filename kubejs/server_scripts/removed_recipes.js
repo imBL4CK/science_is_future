@@ -12,9 +12,27 @@ ServerEvents.recipes((e) => {
     "create:crushing/diorite_recycling",
     "create:milling/andesite",
     "create:crafting/kinetics/fluid_pipe_vertical",
-    "create:crafting/kinetics/fluid_pipe"
+    "create:crafting/kinetics/fluid_pipe",
+    "farmersdelight:crafting/wheat_dough_from_water",
+    "minecraft:iron_ingot_from_smelting_raw_iron",
+    "minecraft:iron_ingot_from_blasting_raw_iron",
+    "minecraft:copper_ingot_from_smelting_raw_copper",
+    "minecraft:copper_ingot_from_blasting_raw_copper",
+    "minecraft:gold_ingot_from_smelting_raw_gold",
+    "minecraft:gold_ingot_from_blasting_raw_gold",
+    "create:smelting/zinc_ingot_from_raw_ore",
+    "create:blasting/zinc_ingot_from_raw_ore",
+    "reliable_backpacks:backpack_from_rope",
+    "create:crafting/appliances/copper_diving_helmet",
+    "minecraft:iron_helmet",
+    "minecraft:iron_chestplate",
+    "minecraft:iron_leggings",
+    "minecraft:iron_boots",
+    "create:sequenced_assembly/precision_mechanism"
   ];
   remove_recipes.forEach((recipeID) => {
     e.remove({ id: recipeID });
   });
+  
+  e.remove({ type: "bountifulfares:milling" });
 });

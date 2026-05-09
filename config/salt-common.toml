@@ -1,0 +1,88 @@
+#Salting foods to add extra nutrition. Can be disabled by removing 'salt:salting' recipe or removing all items from 'salt/tags/item/can_be_salted' tag.
+[Salting]
+	#Amount of additional nutrition that salted food provides. 1 nutrition = half of hunger shank.
+	#Negative values will decrease hunger restored.
+	# Default: 2
+	# Range: -20 ~ 20
+	SaltingNutrition = 2
+	#Amount of additional saturation modifier to apply when food is eaten.
+	# Default: 0.10000000149011612
+	# Range: -10.0 ~ 10.0
+	SaltingSaturationModifier = 0.10000000149011612
+	#Additional nutrition and saturation values per food. Overrides default values (defined above).
+	#Format: itemRegistryName,nutrition,[saturationModifier].
+	#Separated by commas. Saturation is optional (will use default value if not specified)
+	SaltingFoodValues = ["minecraft:rotten_flesh,1,0.05"]
+
+[Dissolving]
+	#Salt blocks will dissolve if adjacent to blocks defined in the tag 'salt/tags/block/salt_dissolvables'
+	SaltDissolvingEnabled = true
+	#Chance of water dissolving in fluid on random tick. 1.0 = first random tick. 0.0 = never.
+	# Default: 0.35
+	# Range: 0.0 ~ 1.0
+	SaltDissolvingChance = 0.35
+	#If dissolved by a fluid source block - salt will convert to a fluid source block instead of air.
+	SaltDissolvesIntoSourceBlocks = true
+	#Salt blocks will dissolve when exposed to rain
+	SaltDissolvingInRain = true
+	#Chance of salt blocks dissolving in rain on random tick. 1.0 = first random tick. 0.0 = never.
+	# Default: 0.15
+	# Range: 0.0 ~ 1.0
+	SaltDissolvingInRainChance = 0.15
+
+[Melting]
+	#Salt (item) will melt clicked blocks defined in tag 'salt/tags/block/meltables'.
+	SaltItemMeltingEnabled = true
+	#Salt blocks will melt adjacent blocks defined in tag 'salt/tags/block/meltables' on random tick.
+	SaltBlockMeltingEnabled = true
+	#Chance of block melting on random tick. 1.0 = first random tick. 0.0 = never.
+	# Default: 0.4
+	# Range: 0.0 ~ 1.0
+	SaltBlockMeltingChance = 0.4
+	#Melted block will be replaced with Water source block.
+	SaltMeltingPlaceWater = true
+
+[Evaporation]
+	#Water in a cauldron with a heat source beneath (defined in tag 'salt/tags/block/heaters') will evaporate and salt will be formed in the cauldron
+	EvaporationEnabled = true
+	#Chance of water evaporating on random tick. 1.0 = first random tick. 0.0 = never.
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	EvaporationChance = 0.3
+
+[GrowingSaltClusters]
+	#Water dripping from a Pointed Dripstone on a blocks tagged as 'salt/tags/block/salt_cluster_growables' will grow Salt Clusters
+	SaltClusterGrowingEnabled = true
+	#Chance of cluster growing by one stage on random tick. 1.0 = first random tick. 0.0 = never.
+	# Default: 0.1
+	# Range: 0.0 ~ 1.0
+	SaltClusterGrowingChance = 0.1
+
+#Rock Salt Deposits will generate in biomes defined in tag 'salt/tags/worldgen/biome/has_rock_salt_deposits'
+#Since 1.19 - parts of the Rock Salt generation is defined in jsons.
+#To enable/disable the generation or configure the generation chances you'll need to create a datapack.
+#Enable/disable generation - 'salt/neoforge/biome_modifier/add_rock_salt_deposit.json' - {"type": "neoforge:none"} will disable the generation.
+#Changing generation chances - 'salt/worldgen/placed_feature/mineral_rock_salt.json'
+[RockSalt]
+	#Size of the Rock Salt deposit
+	# Default: 24
+	# Range: 1 ~ 64
+	RockSaltSize = 24
+	#Chance of the Salt Clusters generating on the deposits (per side)
+	# Default: 0.15000000596046448
+	# Range: 0.0 ~ 1.0
+	RockSaltClusterChance = 0.15000000596046448
+
+[VillagerTrades]
+	#Butcher will buy and sell Salt.
+	ButcherSaltTradesEnabled = true
+
+#NeoForge 1.21.1 port-only options. Changes will only apply in newly-generated chunks.
+[PortTweaks]
+	#If true, salt deposits spawn at ~4 attempts per qualifying chunk (no rarity filter).
+	#If false (default), deposits spawn at upstream rate of ~1 deposit per 8 chunks.
+	#Only affects newly-generated chunks.
+	BumpSpawnDensity = false
+	#If true, Salt Block falls like sand (uses the gravity behavior from its FallingBlock parent).
+	#If false (default), Salt Block stays put — matches upstream Salt 1.20.1 behavior.
+	SaltBlockGravity = false

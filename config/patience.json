@@ -50,7 +50,7 @@
     },
     "by_tag": {
       "#minecraft:planks": 1.0,
-      "#cogs_and_clocks:insulators": 1.5
+      "#science_is_future:insulators": 1.5
     }
   },
   "output_multipliers": {

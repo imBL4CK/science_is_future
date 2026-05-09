@@ -2,6 +2,8 @@
   "mod_priorities": [
     "minecraft",
     "kubejs",
+    "farmersdelight",
+    "bountifulfares",
     "create",
     "cogs_and_clocks",
     "alloyed"
@@ -28,7 +30,10 @@
     "c:rods/{material}",
     "c:storage_blocks/raw_{material}",
     "c:storage_blocks/{material}",
-    "c:wires/{material}"
+    "c:wires/{material}",
+    "c:flours/wheat",
+    "c:foods/dough/wheat",
+    "c:foods/cooked_egg"
   ],
   "ignored_tags": [],
   "ignored_items": [],
