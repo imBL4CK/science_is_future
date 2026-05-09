@@ -8,4 +8,5 @@ ClientEvents.lang("en_us", (event) => {
   event.renameItem("minecraft:stone_shovel", "Flint Shovel");
   event.renameItem("minecraft:stone_hoe", "Flint Hoe");
   event.renameItem("minecraft:flint_and_steel", "Flint and Pebbles");
+  event.renameItem("immersiveengineering:ersatz_leather", "Synthetic Leather");
 });

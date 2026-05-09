@@ -152,6 +152,34 @@ ServerEvents.recipes((e) => {
         R: "science_is_future:rubber"
       },
     },
+    //Insulated LV Wire Coil
+    {
+      result: "immersiveengineering:wirecoil_copper_ins",
+      id: "immersiveengineering/insulated_lv_wire_coil",
+      pattern: [
+        "IWI",
+        "WIW",
+        "IWI",
+      ],
+      keys: {
+        W: "immersiveengineering:wirecoil_copper",
+        I: "#science_is_future:insulators"
+      },
+    },
+    //Insulated MV Wire Coil
+    {
+      result: "immersiveengineering:wirecoil_electrum_ins",
+      id: "immersiveengineering/insulated_mv_wire_coil",
+      pattern: [
+        "IWI",
+        "WIW",
+        "IWI",
+      ],
+      keys: {
+        W: "immersiveengineering:wirecoil_electrum",
+        I: "#science_is_future:insulators"
+      },
+    },
   ];
   recipes.forEach((recipe) => {
     e.shaped(recipe.result, recipe.pattern, recipe.keys).id(`science_is_future:minecraft/crafting_table/${recipe.id}`);

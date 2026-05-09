@@ -14,24 +14,43 @@ ServerEvents.recipes((e) => {
     "create:crafting/kinetics/fluid_pipe_vertical",
     "create:crafting/kinetics/fluid_pipe",
     "farmersdelight:crafting/wheat_dough_from_water",
-    "minecraft:iron_ingot_from_smelting_raw_iron",
-    "minecraft:iron_ingot_from_blasting_raw_iron",
-    "minecraft:copper_ingot_from_smelting_raw_copper",
-    "minecraft:copper_ingot_from_blasting_raw_copper",
-    "minecraft:gold_ingot_from_smelting_raw_gold",
-    "minecraft:gold_ingot_from_blasting_raw_gold",
-    "create:smelting/zinc_ingot_from_raw_ore",
-    "create:blasting/zinc_ingot_from_raw_ore",
     "reliable_backpacks:backpack_from_rope",
     "create:crafting/appliances/copper_diving_helmet",
     "minecraft:iron_helmet",
     "minecraft:iron_chestplate",
     "minecraft:iron_leggings",
     "minecraft:iron_boots",
-    "create:sequenced_assembly/precision_mechanism"
+    "create:sequenced_assembly/precision_mechanism",
+    "immersiveengineering:blueprint/electron_tube",
+    "immersiveengineering:crafting/component_iron",
+    "immersiveengineering:crafting/component_steel",
+    "immersiveengineering:blueprint/circuit_board",
+    "immersiveengineering:alloysmelter/insulating_glass",
+    "alloyed:forging/bronze_ingot_from_create",
+    "alloyed:mixing/bronze_ingot_x3",
+    "immersiveengineering:crafting/gunpart_barrel",
+    "alloyed:forging/steel_ingot",
+    "alloyed:mixing/steel_ingot",
+    "minecraft:netherite_ingot",
+    "salt:gunpowder"
   ];
+  let materials = [
+    "iron",
+    "gold",
+    "copper",
+    "zinc",
+    "silver",
+    "lead",
+    "aluminum",
+    "nickel",
+    "uranium"
+  ]
   remove_recipes.forEach((recipeID) => {
     e.remove({ id: recipeID });
+  });
+  materials.forEach((material) => {
+    e.remove({ type: "minecraft:smelting", input: `#c:raw_materials/${material}`, output: `#c:ingots/${material}`});
+    e.remove({ type: "minecraft:blasting", input: `#c:raw_materials/${material}`, output: `#c:ingots/${material}`});
   });
   
   e.remove({ type: "bountifulfares:milling" });

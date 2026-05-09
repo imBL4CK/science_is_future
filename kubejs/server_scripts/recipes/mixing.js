@@ -1,7 +1,7 @@
 ServerEvents.recipes((e) => {
 
   const recipes = [
-    //Iron Ingot
+    //Tanned Leather
     {
       id: "minecraft/iron_ingot",
       heatRequirement: "heated",
@@ -24,6 +24,43 @@ ServerEvents.recipes((e) => {
       results: [
         {
           "id": "science_is_future:tanned_leather",
+        }
+      ],
+    },
+    //Bronze Ingot
+    {
+      id: "alloyed/bronze_ingot",
+      heatRequirement: "heated",
+      ingredients: [
+        {
+          "tag": "c:ingots/copper",
+        },
+        {
+          "tag": "c:ingots/copper",
+        },
+        {
+          "tag": "c:ingots/copper",
+        },
+        {
+          "tag": "c:ingots/zinc",
+        },
+        {
+          "item": "create:cinder_flour",
+        },
+        {
+          "item": "create:cinder_flour",
+        },
+        {
+          "item": "create:cinder_flour",
+        },
+        {
+          "item": "create:cinder_flour",
+        },
+      ],
+      results: [
+        {
+          "id": "alloyed:bronze_ingot",
+          "count": 4
         }
       ],
     },

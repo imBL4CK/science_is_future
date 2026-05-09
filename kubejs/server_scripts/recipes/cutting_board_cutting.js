@@ -85,6 +85,111 @@ ServerEvents.recipes((e) => {
         }
       ]
     },
+    //Crushed raw silver
+    {
+      id: "create/crushed_raw_silve",
+      ingredients: [
+        {
+          "tag": "c:raw_materials/silver",
+        },
+      ],
+      result: [
+        {
+          "item": {
+            "id": "create:crushed_raw_silver"
+          }
+        },
+      ],
+      tool: [
+        {
+          "tag": "c:tools/hammers"
+        }
+      ]
+    },
+    //Crushed raw lead
+    {
+      id: "create/crushed_raw_lead",
+      ingredients: [
+        {
+          "tag": "c:raw_materials/lead",
+        },
+      ],
+      result: [
+        {
+          "item": {
+            "id": "create:crushed_raw_lead"
+          }
+        },
+      ],
+      tool: [
+        {
+          "tag": "c:tools/hammers"
+        }
+      ]
+    },
+    //Crushed raw nickel
+    {
+      id: "create/crushed_raw_nickel",
+      ingredients: [
+        {
+          "tag": "c:raw_materials/nickel",
+        },
+      ],
+      result: [
+        {
+          "item": {
+            "id": "create:crushed_raw_nickel"
+          }
+        },
+      ],
+      tool: [
+        {
+          "tag": "c:tools/hammers"
+        }
+      ]
+    },
+    //Crushed raw zinc
+    {
+      id: "create/crushed_raw_aluminum",
+      ingredients: [
+        {
+          "tag": "c:raw_materials/aluminum",
+        },
+      ],
+      result: [
+        {
+          "item": {
+            "id": "create:crushed_raw_aluminum"
+          }
+        },
+      ],
+      tool: [
+        {
+          "tag": "c:tools/hammers"
+        }
+      ]
+    },
+    //Crushed raw uranium
+    {
+      id: "create/crushed_raw_uranium",
+      ingredients: [
+        {
+          "tag": "c:raw_materials/uranium",
+        },
+      ],
+      result: [
+        {
+          "item": {
+            "id": "create:crushed_raw_uranium"
+          }
+        },
+      ],
+      tool: [
+        {
+          "tag": "c:tools/hammers"
+        }
+      ]
+    },
   ];
   recipes.forEach((recipe) => {
     e.custom({

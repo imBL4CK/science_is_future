@@ -33,7 +33,8 @@
     "c:wires/{material}",
     "c:flours/wheat",
     "c:foods/dough/wheat",
-    "c:foods/cooked_egg"
+    "c:foods/cooked_egg",
+    "science_is_future:electron_tubes"
   ],
   "ignored_tags": [],
   "ignored_items": [],

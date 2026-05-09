@@ -163,6 +163,26 @@ ServerEvents.recipes((e) => {
         }
       },
     },
+    //Revolver Barrel
+    {
+      result: {
+        id: "immersiveengineering:gunpart_barrel"
+      },
+      id: "immersiveengineering/revolver_barrel",
+      pattern: [
+        "   ",
+        " R ",
+        "P  "
+      ],
+      key: {
+        R: {
+          tag: "c:rods/steel"
+        },
+        P: {
+          tag: "c:plates/steel"
+        }
+      },
+    },
   ];
   recipes.forEach((recipe) => {
     e.custom({

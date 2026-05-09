@@ -3,6 +3,7 @@ StartupEvents.registry("item", (e) => {
     e.create("science_is_future:flint_hammer").maxDamage(131).unstackable().tag("c:tools/hammers");
     e.create("science_is_future:bronze_hammer").maxDamage(500).unstackable().tag("c:tools/hammers");
     e.create("science_is_future:steel_hammer").maxDamage(1000).unstackable().tag("c:tools/hammers");
+    e.create("science_is_future:wrought_iron_ingot").tag("c:ingots/wrought_iron").tag("c:ingots");
     e.create("science_is_future:iron_reinforced_plating");
     e.create("science_is_future:diamond_reinforced_plating");
     e.create("science_is_future:netherite_reinforced_plating");

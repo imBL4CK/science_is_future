@@ -10,4 +10,26 @@ ServerEvents.recipes((e) => {
     e.replaceInput({ id: "reliable_gliders:glider" }, "minecraft:leather", "science_is_future:tanned_leather");
     e.replaceInput({ id: "travelertoolbelt:belt" }, "minecraft:leather", "science_is_future:tanned_leather");
     e.replaceInput({ id: "create:crafting/curiosities/brown_toolbox" }, "minecraft:leather", "science_is_future:tanned_leather");
+    e.replaceInput({ id: "immersiveengineering:blueprint/component_electronic_adv" }, "immersiveengineering:electron_tube", "create:electron_tube");
+    e.replaceInput({ id: "immersiveengineering:crafting/speedloader" }, "immersiveengineering:plate_duroplast", "#c:plastics");
+    e.replaceInput({ id: "immersiveengineering:crafting/toolupgrade_skyhook_insulation" }, "immersiveengineering:plate_duroplast", "#c:plastics");
+    e.replaceInput({ id: "immersiveengineering:crafting/powerpack" }, "minecraft:leather", "science_is_future:tanned_leather");
+    e.replaceInput({ id: "immersiveengineering:crafting/toolupgrade_shield_magnet" }, "minecraft:leather", "science_is_future:tanned_leather");
+    e.replaceInput({ id: "minecraft:minecart" }, "minecraft:iron_ingot", "science_is_future:wrought_iron_ingot");
+    e.replaceInput({ id: "minecraft:hopper" }, "minecraft:iron_ingot", "science_is_future:wrought_iron_ingot");
+    e.replaceInput({ id: "quark:tweaks/crafting/utility/misc/easy_hopper" }, "minecraft:iron_ingot", "science_is_future:wrought_iron_ingot");
+    e.replaceInput({ id: "minecraft:smithing_table" }, "minecraft:iron_ingot", "science_is_future:wrought_iron_ingot");
+    e.replaceInput({ id: "minecraft:smithing_table" }, "minecraft:iron_ingot", "science_is_future:wrought_iron_ingot");
+    e.replaceInput({ id: "minecraft:anvil" }, "minecraft:iron_ingot", "science_is_future:wrought_iron_ingot");
+    e.replaceInput({ id: "minecraft:cauldron" }, "minecraft:iron_ingot", "science_is_future:wrought_iron_ingot");
+    e.replaceInput({ id: "supplementaries:cannon" }, "minecraft:iron_ingot", "science_is_future:wrought_iron_ingot");
+    e.replaceInput({ id: "supplementaries:cannon_2" }, "minecraft:iron_ingot", "science_is_future:wrought_iron_ingot");
+    e.replaceInput({ id: "quark:tweaks/crafting/utility/misc/hopper_minecart" }, "minecraft:iron_ingot", "science_is_future:wrought_iron_ingot");
+    e.replaceInput({ id: "quark:tweaks/crafting/utility/misc/chest_minecart" }, "minecraft:iron_ingot", "science_is_future:wrought_iron_ingot");
+    e.replaceInput({ id: "quark:tweaks/crafting/utility/misc/furnace_minecart" }, "minecraft:iron_ingot", "science_is_future:wrought_iron_ingot");
+    e.replaceInput({ id: "quark:building/crafting/furnaces/blackstone_minecarft_tweaked" }, "minecraft:iron_ingot", "science_is_future:wrought_iron_ingot");
+    e.replaceInput({ id: "quark:building/crafting/furnaces/deepslate_minecarft_tweaked" }, "minecraft:iron_ingot", "science_is_future:wrought_iron_ingot");
+    e.replaceInput({ id: "quark:tweaks/crafting/utility/misc/tnt_minecart" }, "minecraft:iron_ingot", "science_is_future:wrought_iron_ingot");
+    e.replaceInput({ id: "supplementaries:dispenser_minecart_quark" }, "minecraft:iron_ingot", "science_is_future:wrought_iron_ingot");
+    e.replaceInput({ id: "farmersdelight:skillet" }, "minecraft:iron_ingot", "science_is_future:wrought_iron_ingot");
 })

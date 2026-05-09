@@ -37,6 +37,31 @@ ServerEvents.recipes((e) => {
         {"tag": "c:plates/iron"},
       ],
     },
+    //Reinforced Iron Plate
+    {
+      result: {
+        "id": "science_is_future:wrought_iron_ingot",
+        "count": 2
+      },
+      id: "science_is_future/wrought_iron_ingot_by_cinder_flour",
+      ingredients: [
+        {"tag": "c:ingots/iron"},
+        {"tag": "c:ingots/iron"},
+        {"item": "create:cinder_flour"},
+      ],
+    },
+    {
+      result: {
+        "id": "science_is_future:wrought_iron_ingot",
+        "count": 2
+      },
+      id: "science_is_future/wrought_iron_ingot_by_slags",
+      ingredients: [
+        {"tag": "c:ingots/iron"},
+        {"tag": "c:ingots/iron"},
+        {"item": "immersiveengineering:slag"},
+      ],
+    },
   ];
   recipes.forEach((recipe) => {
     e.custom({
