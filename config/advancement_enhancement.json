@@ -2,7 +2,7 @@
   "doFade": false,
   "criteriaDetail": "Default",
   "requiresShift": true,
-  "addToInventory": true,
+  "addToInventory": false,
   "showDebugCoordinates": false,
   "orderTabsAlphabetically": false,
   "uiScaling": 100,

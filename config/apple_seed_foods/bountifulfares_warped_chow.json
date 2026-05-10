@@ -1,0 +1,9 @@
+{
+  "source_item": "bountifulfares:warped_chow",
+  "auto_calculated": false,
+  "comment": "Edit this file to add custom nutrition values",
+  "nutritions": {
+    "proteins": 0.02,
+    "vegetables": 0.02
+  }
+}

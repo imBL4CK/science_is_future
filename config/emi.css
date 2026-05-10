@@ -4,7 +4,7 @@
 	/**
 	 * Whether EMI is enabled and visible.
 	 */
-	enabled: true;
+	enabled: false;
 
 	/**
 	 * Whether cheating in items is enabled.
@@ -24,7 +24,7 @@
 	/**
 	 * Which sidebar should be searched using the search bar.
 	 */
-	search-sidebar: right;
+	search-sidebar: left;
 
 	/**
 	 * Whether normal search queries should include the tooltip.
@@ -51,7 +51,7 @@
 	/**
 	 * Where to display status effects in the inventory.
 	 */
-	effect-location: left-compressed;
+	effect-location: right-compressed;
 
 	/**
 	 * Whether to display a gray overlay when hovering over a stack.
@@ -93,7 +93,7 @@
 	/**
 	 * Which sidebar type to switch to when searching.
 	 */
-	search-sidebar-focus: index;
+	search-sidebar-focus: none;
 
 	/**
 	 * Which sidebar type to focus when the search is empty.
@@ -108,7 +108,7 @@
 	/**
 	 * Whether the recipe tree button should be visible.
 	 */
-	recipe-tree-button-visibility: auto;
+	recipe-tree-button-visibility: hidden;
 
 	/**
 	 * The maximum height the recipe screen will grow to be if space is available in
@@ -167,7 +167,7 @@
 	/**
 	 * The pages in the left sidebar
 	 */
-	left-sidebar-pages: favorites;
+	left-sidebar-pages: index, favorites;
 
 	/**
 	 * The subpanels in the left sidebar
@@ -177,17 +177,17 @@
 	/**
 	 * How many columns and rows of ingredients to limit the left sidebar to
 	 */
-	left-sidebar-size: 7, 9;
+	left-sidebar-size: 8, 7;
 
 	/**
 	 * How much space to maintain between the left sidebar and obstructions, in pixels
 	 */
-	left-sidebar-margins: 2, 2, 2, 2;
+	left-sidebar-margins: 2, 12, 2, 2;
 
 	/**
 	 * Where to position the left sidebar
 	 */
-	left-sidebar-align: center, center;
+	left-sidebar-align: right, center;
 
 	/**
 	 * Whether to render the header buttons and page count for the left sidebar
@@ -197,12 +197,12 @@
 	/**
 	 * Which theme to use for the left sidebar
 	 */
-	left-sidebar-theme: transparent;
+	left-sidebar-theme: vanilla;
 
 	/**
 	 * The pages in the right sidebar
 	 */
-	right-sidebar-pages: index, lookup-history;
+	right-sidebar-pages: none;
 
 	/**
 	 * The subpanels in the right sidebar
@@ -212,7 +212,7 @@
 	/**
 	 * How many columns and rows of ingredients to limit the right sidebar to
 	 */
-	right-sidebar-size: 9, 9;
+	right-sidebar-size: 7, 9;
 
 	/**
 	 * How much space to maintain between the right sidebar and obstructions, in pixels
@@ -222,7 +222,7 @@
 	/**
 	 * Where to position the right sidebar
 	 */
-	right-sidebar-align: center, center;
+	right-sidebar-align: left, center;
 
 	/**
 	 * Whether to render the header buttons and page count for the right sidebar
@@ -232,7 +232,7 @@
 	/**
 	 * Which theme to use for the right sidebar
 	 */
-	right-sidebar-theme: transparent;
+	right-sidebar-theme: modern;
 
 	/**
 	 * The pages in the top sidebar
@@ -310,7 +310,7 @@
 	/**
 	 * Toggle the visibility of EMI.
 	 */
-	toggle-visibility: "ctrl key.keyboard.o";
+	toggle-visibility: "key.keyboard.unknown";
 
 	/**
 	 * Focuses the search bar.

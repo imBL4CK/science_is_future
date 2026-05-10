@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#science_is_future:has_crude_oil_lakes",
+  "features": "science_is_future:crude_oil_lake_underground",
+  "step": "lakes"
+}

@@ -183,6 +183,29 @@ ServerEvents.recipes((e) => {
         }
       },
     },
+    //Spyglass
+    {
+      result: {
+        id: "minecraft:spyglass"
+      },
+      id: "minecraft/spyglass",
+      pattern: [
+        " A ",
+        " G ",
+        " C "
+      ],
+      key: {
+        A: {
+          tag: "c:gems/amethyst"
+        },
+        G: {
+          tag: "c:ingots/gold"
+        },
+        C: {
+          tag: "c:ingots/copper"
+        }
+      },
+    },
   ];
   recipes.forEach((recipe) => {
     e.custom({

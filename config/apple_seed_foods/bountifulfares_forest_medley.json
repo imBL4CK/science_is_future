@@ -1,0 +1,11 @@
+{
+  "source_item": "bountifulfares:forest_medley",
+  "auto_calculated": false,
+  "comment": "Edit this file to add custom nutrition values",
+  "nutritions": {
+    "fruits": 0.015,
+    "proteins": 0.04,
+    "vegetables": 0.02,
+    "grains": 0.04
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "settings": {
+    "hideSpeed": 0.2,
+    "hideFadeSpeed": 0.05,
+    "maxY": 0,
+    "minY": -50,
+    "enableMod": true,
+    "enableFading": true,
+    "visibleTicks": 100
+  },
+  "huds": {
+    "hideSubtitles": false,
+    "hideStatusBar": true,
+    "hideProgressBar": true,
+    "hideBossBar": true,
+    "hideChat": true,
+    "hideCrosshair": true,
+    "hideHotbar": true,
+    "hideEffects": true,
+    "hideScoreboard": true
+  },
+  "triggers": {
+    "triggerAirBubbles": true,
+    "triggerEffects": true,
+    "triggerMountHealth": true,
+    "triggerExperience": false,
+    "triggerHotbar": true,
+    "triggerHealth": true,
+    "triggerHunger": true,
+    "triggerArmor": true
+  }
+}

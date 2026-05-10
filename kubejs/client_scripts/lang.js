@@ -1,5 +1,10 @@
 ClientEvents.lang("en_us", (event) => {
   event.add("curios.identifier.key_item", "Key Item");
+  event.add("enchantment.minecraft.lunge.desc", "The user lunges forward when using the spear.",);
+  event.add("enchantment.science_is_future.joust", "Joust",);
+  event.add("enchantment.science_is_future.joust.desc", "The item's damage increases when riding a variant of horse or camel.",);
+  event.add("enchantment.science_is_future.wide_steps", "Wide Steps",);
+  event.add("enchantment.science_is_future.wide_steps.desc", "Increases the speed of the horse wearing it.",);
   //event.renameItem("create:wrench", "Engineer's Wrench");
   event.renameItem("supplementaries:wrench", "Rotation Wrench");
   event.renameItem("minecraft:stone_sword", "Flint Sword");

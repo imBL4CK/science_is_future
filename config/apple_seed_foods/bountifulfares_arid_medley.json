@@ -1,0 +1,9 @@
+{
+  "source_item": "bountifulfares:arid_medley",
+  "auto_calculated": false,
+  "comment": "Edit this file to add custom nutrition values",
+  "nutritions": {
+    "vegetables": 0.02,
+    "grains": 0.04
+  }
+}

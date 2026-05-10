@@ -32,7 +32,7 @@ ServerEvents.recipes((e) => {
     "alloyed:forging/steel_ingot",
     "alloyed:mixing/steel_ingot",
     "minecraft:netherite_ingot",
-    "salt:gunpowder"
+    "minecraft:spyglass"
   ];
   let materials = [
     "iron",

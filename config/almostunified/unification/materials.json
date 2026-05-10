@@ -37,7 +37,9 @@
     "science_is_future:electron_tubes"
   ],
   "ignored_tags": [],
-  "ignored_items": [],
+  "ignored_items": [
+    "unify:steel_ingot"
+  ],
   "ignored_recipe_types": [
     "cucumber:shaped_tag"
   ],

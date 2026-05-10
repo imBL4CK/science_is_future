@@ -5,36 +5,39 @@
 
 #Nutritions Settings
 [Nutritions_Settings]
-	#谷物营养值奖励节点设置
-	grains_ranges = ["0-25:effect(minecraft:slowness,0)", "61-70:attribute(minecraft:generic.max_health,4.0)", "71-80:attribute(minecraft:generic.max_health,6.0),effect(minecraft:regeneration,0)", "81-100:attribute(minecraft:generic.max_health,6.0),attribute(minecraft:generic.attack_damage,1.0),effect(minecraft:regeneration,0)"]
-	#水果营养值奖励节点设置
-	fruits_ranges = ["0-25:effect(minecraft:mining_fatigue,0)", "61-70:attribute(minecraft:generic.max_health,2.0),attribute(minecraft:generic.attack_speed,0.05)", "71-80:attribute(minecraft:generic.max_health,4.0),attribute(minecraft:generic.attack_speed,0.1)", "81-100:attribute(minecraft:generic.max_health,6.0),attribute(minecraft:generic.attack_speed,0.2)"]
-	#蔬菜营养值奖励节点设置
-	vegetables_ranges = ["0-25:effect(minecraft:nausea,0)", "61-70:attribute(minecraft:generic.max_health,2.0),attribute(minecraft:generic.armor_toughness,2.0)", "71-80:attribute(minecraft:generic.max_health,2.0),attribute(minecraft:generic.armor_toughness,3.0)", "81-100:attribute(minecraft:generic.max_health,2.0),attribute(minecraft:generic.armor_toughness,4.0),effect(minecraft:haste,0)"]
-	#蛋白质营养值奖励节点设置
-	proteins_ranges = ["0-25:effect(minecraft:weakness,0)", "61-70:attribute(minecraft:generic.max_health,2.0),attribute(minecraft:generic.armor,1.0)", "71-80:attribute(minecraft:generic.max_health,4.0),attribute(minecraft:generic.armor,2.0)", "81-100:attribute(minecraft:generic.max_health,6.0),attribute(minecraft:generic.armor,4.0),effect(minecraft:resistance,0)"]
-	#糖分营养值奖励节点设置
-	sugars_ranges = ["51-60:effect(minecraft:speed,0)", "61-80:effect(minecraft:speed,1)", "81-100:effect(minecraft:speed,1),effect(minecraft:hunger,4)"]
-
-#Initial Values Settings
-[Initial_Values_Settings]
-	#谷物营养值初始百分比，默认50%
+	#谷物初始营养值设置 默认50%
 	# Default: 0.5
 	# Range: 0.0 ~ 1.0
 	grains_initial = 0.5
-	#水果营养值初始百分比，默认50%
+	#水果初始营养值设置 默认50%
 	# Default: 0.5
 	# Range: 0.0 ~ 1.0
 	fruits_initial = 0.5
-	#蔬菜营养值初始百分比，默认50%
+	#蔬菜初始营养值设置 默认50%
 	# Default: 0.5
 	# Range: 0.0 ~ 1.0
 	vegetables_initial = 0.5
-	#蛋白质营养值初始百分比，默认50%
+	#蛋白质初始营养值设置 默认50%
 	# Default: 0.5
 	# Range: 0.0 ~ 1.0
 	proteins_initial = 0.5
-	#糖分营养值初始百分比，默认50%
+	#糖类初始营养值设置 默认50%
 	# Default: 0.5
 	# Range: 0.0 ~ 1.0
 	sugars_initial = 0.5
+
+	#注意：效果范围配置现在默认从营养素数据文件读取。
+	#如需覆盖，请删除前面的注释并取消#号注释并配置列表。
+	#示例：grains_ranges = ["0-25:effect(minecraft:slowness,0)"]
+	#优先级：此处配置（非注释且非空时） > 营养素数据文件配置
+	[Nutritions_Settings.Effects_Override]
+		#谷物营养值奖励节点设置 - 默认使用数据文件配置
+		grains_ranges = []
+		#水果营养值奖励节点设置 - 默认使用数据文件配置
+		fruits_ranges = []
+		#蔬菜营养值奖励节点设置 - 默认使用数据文件配置
+		vegetables_ranges = []
+		#蛋白质营养值奖励节点设置 - 默认使用数据文件配置
+		proteins_ranges = []
+		#糖类营养值奖励节点设置 - 默认使用数据文件配置
+		sugars_ranges = []

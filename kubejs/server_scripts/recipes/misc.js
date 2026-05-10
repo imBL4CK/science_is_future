@@ -20,7 +20,7 @@ ServerEvents.recipes((e) => {
     result: {
       id: "immersiveengineering:component_electronic_adv",
     },
-  }).id("science_is_future:immersiveengineering/blueprint/advanced_electronic_component",);
+  }).id("science_is_future:immersiveengineering/blueprint/advanced_electronic_component");
   //Circuit Backplane
   e.custom({
     type: "immersiveengineering:blueprint",
@@ -36,7 +36,7 @@ ServerEvents.recipes((e) => {
     result: {
       id: "immersiveengineering:circuit_board",
     },
-  }).id("science_is_future:immersiveengineering/blueprint/circuit_backplane",);
+  }).id("science_is_future:immersiveengineering/blueprint/circuit_backplane");
   //Bronze
   e.custom({
     type: "immersiveengineering:arc_furnace",
@@ -70,7 +70,7 @@ ServerEvents.recipes((e) => {
       }
     ],
     time: 100,
-  }).id("science_is_future:immersiveengineering/arc_furnace/bronze_ingot",);
+  }).id("science_is_future:immersiveengineering/arc_furnace/bronze_ingot");
   //Netherite
   e.custom({
     type: "immersiveengineering:arc_furnace",
@@ -101,7 +101,7 @@ ServerEvents.recipes((e) => {
       }
     ],
     time: 100,
-  }).id("science_is_future:immersiveengineering/arc_furnace/netherite_ingot_by_gold_ingots",);
+  }).id("science_is_future:immersiveengineering/arc_furnace/netherite_ingot_by_gold_ingots");
   e.custom({
     type: "immersiveengineering:arc_furnace",
     additives: [
@@ -131,5 +131,41 @@ ServerEvents.recipes((e) => {
       }
     ],
     time: 100,
-  }).id("science_is_future:immersiveengineering/arc_furnace/netherite_ingot_by_gold_dusts",);
+  }).id("science_is_future:immersiveengineering/arc_furnace/netherite_ingot_by_gold_dusts");
+  //Refined Fuel
+  e.custom({
+    type: "immersiveengineering:refinery",
+    catalyst: {
+      "tag": "c:plates/silver"
+    },
+    energy: 100,
+    input0: {
+      "amount": 10,
+      "tag": "c:heavy_fuel"
+    },
+    input1: {
+      "amount": 10,
+      "tag": "c:light_fuel"
+    },
+    result: {
+      "amount": 20,
+      "id": "science_is_future:refined_fuel"
+    }
+  }).id("science_is_future:immersiveengineering/refinery/refined_fuel");
+  //Generator Fuels
+  e.custom({
+    type: "immersiveengineering:generator_fuel",
+    burnTime: 200,
+    fluidTag: "c:heavy_fuel"
+  }).id("science_is_future:immersiveengineering/generator_fuel/heavy_fuel")
+  e.custom({
+    type: "immersiveengineering:generator_fuel",
+    burnTime: 200,
+    fluidTag: "c:light_fuel"
+  }).id("science_is_future:immersiveengineering/generator_fuel/light_fuel")
+  e.custom({
+    type: "immersiveengineering:generator_fuel",
+    burnTime: 500,
+    fluidTag: "c:refined_fuel"
+  }).id("science_is_future:immersiveengineering/generator_fuel/refined_fuel",)
 });
