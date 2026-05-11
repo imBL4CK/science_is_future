@@ -1,5 +1,7 @@
 StartupEvents.registry("item", (e) => {
-    e.create("science_is_future:rubber_boots", "boots").material("science_is_future:rubber").tag("minecraft:freeze_immune_wearables").maxDamage(131).unstackable();
+    e.create("science_is_future:engineer_suit", "chestplate").material("science_is_future:engineer_suit").unstackable();
+    e.create("science_is_future:engineer_leggings", "leggings").material("science_is_future:engineer_suit").unstackable();
+    e.create("science_is_future:rubber_boots", "boots").material("science_is_future:rubber").maxDamage(131).unstackable();
     e.create("science_is_future:flint_hammer").maxDamage(131).unstackable().tag("c:tools/hammers");
     e.create("science_is_future:bronze_hammer").maxDamage(500).unstackable().tag("c:tools/hammers");
     e.create("science_is_future:steel_hammer").maxDamage(1000).unstackable().tag("c:tools/hammers");

@@ -269,6 +269,15 @@
       "overlay_y": 28,
       "overlay_width": 18,
       "overlay_height": 15
+    },
+    {
+      "enabled": true,
+      "screen_class": "blusunrize.immersiveengineering.client.gui.WorkbenchScreen",
+      "time_multiplier": 1.0,
+      "output_slot": 0,
+      "result_slot": 10,
+      "ingredient_slots": "1-9",
+      "ingredient_mode": "slot"
     }
   ]
 }

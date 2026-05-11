@@ -25,7 +25,7 @@
         "id": "science_is_future:wide_steps_speed",
         "amount": {
           "type": "minecraft:linear",
-          "base": 0.5,
+          "base": 0.25,
           "per_level_above_first": 0.25
         },
         "operation": "add_multiplied_base"

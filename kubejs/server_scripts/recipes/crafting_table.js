@@ -180,6 +180,34 @@ ServerEvents.recipes((e) => {
         I: "#science_is_future:insulators"
       },
     },
+    //Engineer Suit
+    {
+      result: "science_is_future:engineer_suit",
+      id: "science_is_future/engineer_suit",
+      pattern: [
+        "I I",
+        "TIT",
+        "TTT",
+      ],
+      keys: {
+        I: "#science_is_future:insulators",
+        T: "science_is_future:tanned_leather",
+      },
+    },
+    //Engineer Suit
+    {
+      result: "science_is_future:engineer_leggings",
+      id: "science_is_future/engineer_leggings",
+      pattern: [
+        "III",
+        "T T",
+        "T T",
+      ],
+      keys: {
+        I: "#science_is_future:insulators",
+        T: "science_is_future:tanned_leather",
+      },
+    },
   ];
   recipes.forEach((recipe) => {
     e.shaped(recipe.result, recipe.pattern, recipe.keys).id(`science_is_future:minecraft/crafting_table/${recipe.id}`);

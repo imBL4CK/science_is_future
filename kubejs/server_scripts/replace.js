@@ -32,4 +32,6 @@ ServerEvents.recipes((e) => {
     e.replaceInput({ id: "quark:tweaks/crafting/utility/misc/tnt_minecart" }, "minecraft:iron_ingot", "science_is_future:wrought_iron_ingot");
     e.replaceInput({ id: "supplementaries:dispenser_minecart_quark" }, "minecraft:iron_ingot", "science_is_future:wrought_iron_ingot");
     e.replaceInput({ id: "farmersdelight:skillet" }, "minecraft:iron_ingot", "science_is_future:wrought_iron_ingot");
+    e.replaceInput({ id: "immersiveengineering:crafting/workbench" }, "immersiveengineering:craftingtable", "minecraft:crafting_table");
+    e.replaceInput({ id: "immersiveengineering:crafting/circuit_table" }, "immersiveengineering:craftingtable", "minecraft:crafting_table");
 })

@@ -6,7 +6,8 @@
             "create:dough",
             "bountifulfares:cooked_egg",
             "bountifulfares:gristmill",
-            "immersiveengineering:ersatz_leather"
+            "immersiveengineering:ersatz_leather",
+            "immersiveengineering:craftingtable"
         ]
     }
 ]

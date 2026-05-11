@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.science_is_future.joust"
   },
-  "exclusive_set": "#science_is_future:exclusive_set/lunge_incompatible",
+  "exclusive_set": "#minecraft:exclusive_set/damage",
   "supported_items": "#science_is_future:enchantable/joust",
   "primary_items": "#science_is_future:enchantable/joust",
   "weight": 1,
@@ -75,6 +75,24 @@
               "predicate": {
                 "vehicle": {
                   "type": "minecraft:camel_husk"
+                }
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "vehicle": {
+                  "type": "minecraft:mule"
+                }
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "vehicle": {
+                  "type": "minecraft:donkey"
                 }
               }
             }
