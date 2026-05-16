@@ -1,0 +1,17 @@
+{
+  "enabled": true,
+  "animateSelf": true,
+  "animateOthers": true,
+  "leftEyeX": 9,
+  "leftEyeY": 14,
+  "rightEyeX": 13,
+  "rightEyeY": 14,
+  "eyelidColorX": 10,
+  "eyelidColorY": 13,
+  "eyeWidth": 2,
+  "eyeHeight": 1,
+  "movementPixels": 1,
+  "blinkIntervalTicks": 90,
+  "blinkDurationTicks": 4,
+  "playerOverrides": {}
+}

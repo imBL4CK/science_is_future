@@ -16,6 +16,10 @@ RecipeViewerEvents.addInformation("item", (e) => {
       item: "science_is_future:refined_fuel_bucket",
       info: "The final product of crude oil processing. It is the best fuel for diesel generators, with a generation rate of 500 Flux.",
     },
+    {
+      item: ["cookscollection:salted_dripstone_block", "cookscollection:salt"],
+      info: "Salt can be found in caves.",
+    },
   ];
   information.forEach((jei) => {
     e.add(jei.item, [jei.info]);

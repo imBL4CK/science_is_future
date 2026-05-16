@@ -1,0 +1,22 @@
+{
+  "chosenPreset": 0,
+  "apiPreset": -1,
+  "loadedPresets": [
+    {
+      "skin": {
+        "skin_name": "670002060",
+        "model": "slim",
+        "type": "skinshuffle:config"
+      },
+      "name": "iamBL4CK_"
+    },
+    {
+      "skin": {
+        "skin_name": "116830203",
+        "model": "slim",
+        "type": "skinshuffle:config"
+      },
+      "name": "Unnamed Preset"
+    }
+  ]
+}

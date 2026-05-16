@@ -7,7 +7,15 @@
             "bountifulfares:cooked_egg",
             "bountifulfares:gristmill",
             "immersiveengineering:ersatz_leather",
-            "immersiveengineering:craftingtable"
+            "immersiveengineering:craftingtable",
+            "cookscollection:lemon",
+            "cookscollection:lemonade",
+            "cookscollection:lemon_sapling",
+            "cookscollection:lemon_log",
+            "cookscollection:lemon_wood",
+            "cookscollection:lemon_leaves",
+            "cookscollection:fruiting_lemon_leaves",
+            "cookscollection:lemon_crate"
         ]
     }
 ]
